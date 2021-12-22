@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "async-programming-promises-master"
+		},
+		{
+			"path": "async-programming-promises-understanding-promises"
+		},
+		{
+			"path": "async-programming-promises-consuming-promises"
+		},
+		{
+			"path": "async-programming-promises-creating-promises"
+		},
+		{
+			"path": "async-programming-promises-iterating"
+		}
+	],
+	"settings": {}
+}
