@@ -9,8 +9,6 @@
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:cypress": "cypress open",
-    "cypress:test": "concurrently 'npm run start' 'npm run start:cypress'"
   },
   "private": true,
   "dependencies": {
@@ -37,6 +35,9 @@
     "cypress": "^6.7.1",
     "jest": "^26.6.3",
     "jest-preset-angular": "^8.3.2",
+    "karma": "~6.3.2",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-coverage": "~2.0.3",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
