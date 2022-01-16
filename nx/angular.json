@@ -44,12 +44,18 @@
               "outputHashing": "all"
             },
             "development": {
+              "baseUrl": "http://localhost:4201/",
+              "baseHref": "/cb/",
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [{
+                "replace": "configuration/config.serve.json",
+                "with": "configuration/config.development.serve.json"
+              }]
             }
           },
           "defaultConfiguration": "development"
@@ -61,7 +67,8 @@
               "browserTarget": "guide:build:production"
             },
             "development": {
-              "browserTarget": "guide:build:development"
+              "browserTarget": "guide:build:development",
+              "proxyConfig": "configuration/proxy.development.js"
             }
           },
           "defaultConfiguration": "development"
