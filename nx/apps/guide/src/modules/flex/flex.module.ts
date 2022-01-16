@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { FlexRoutingModule } from './flex-routing.module';
 import { FlexComponent } from './flex.component';
+import { FxflexComponent } from './fxflex/fxflex.component';
+import { CssflexComponent } from './cssflex/cssflex.component';
 
 
 @NgModule({
   declarations: [
-    FlexComponent
+    FlexComponent,
+    FxflexComponent,
+    CssflexComponent
   ],
   imports: [
     CommonModule,
