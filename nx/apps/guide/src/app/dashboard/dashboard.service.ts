@@ -14,20 +14,35 @@ export class DashboardService {
           [
           {
             label: 'Flex',
-            items: [{ label: 'CSS Flex', routerLink: 'flex/cssflex', icon: PrimeIcons.PLUS}, { label: 'FxFlex', routerLink: 'flex/fxflex'}]
+            items: [{ label: 'CSS Flex', routerLink: 'flex/cssflex', icon: PrimeIcons.CIRCLE}, { label: 'FxFlex', routerLink: 'flex/fxflex'}]
           },
             {
               label: 'Grid',
+              items: []
+            },
+            {
+              label: 'CSS',
               items: []
             }
           ],
           [
             {
-              label: 'CSS',
-              items: []
+              label: 'Template',
+              items: [{ label: 'ng template', routerLink: 'template' }]
             }
           ]
           ]
+      },
+      {
+        label: 'Component',
+        items: [
+          [
+            {
+              label: 'Lifecycle',
+              items: [ { label: 'Sequence', routerLink: 'lifecycle/sequence'} ]
+            }
+          ]
+        ]
       },
       {
         label: 'Forms',
