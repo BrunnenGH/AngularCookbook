@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {PanelMenuModule} from 'primeng/panelmenu';
 import {MenuItem} from 'primeng/api';
 
 @Component({

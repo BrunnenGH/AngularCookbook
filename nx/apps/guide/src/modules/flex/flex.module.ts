@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {PanelMenuModule} from 'primeng/panelmenu';
 
 import { FlexRoutingModule } from './flex-routing.module';
 import { FlexComponent } from './flex.component';
@@ -15,7 +16,8 @@ import { CssflexComponent } from './cssflex/cssflex.component';
   ],
   imports: [
     CommonModule,
-    FlexRoutingModule
+    FlexRoutingModule,
+    PanelMenuModule
   ]
 })
 export class FlexModule { }

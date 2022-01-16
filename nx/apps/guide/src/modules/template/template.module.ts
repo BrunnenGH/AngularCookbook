@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template-routing.module';
 import { TemplateComponent } from './template.component';
+import { RorwformComponent } from './rorwform/rorwform.component';
 
 
 @NgModule({
   declarations: [
-    TemplateComponent
+    TemplateComponent,
+    RorwformComponent
   ],
   imports: [
     CommonModule,
