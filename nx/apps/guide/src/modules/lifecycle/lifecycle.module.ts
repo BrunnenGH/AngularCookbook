@@ -5,7 +5,7 @@ import { LifecycleRoutingModule } from './lifecycle-routing.module';
 import { LifecycleComponent } from './lifecycle.component';
 import { SequenceComponent } from './sequence/sequence.component';
 import { ChildComponent } from './child/child.component';
-
+import {AccordionModule} from 'primeng/accordion';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { ChildComponent } from './child/child.component';
   ],
   imports: [
     CommonModule,
-    LifecycleRoutingModule
+    LifecycleRoutingModule,
+    AccordionModule
   ]
 })
 export class LifecycleModule { }
