@@ -6,17 +6,21 @@ import { LifecycleComponent } from './lifecycle.component';
 import { SequenceComponent } from './sequence/sequence.component';
 import { ChildComponent } from './child/child.component';
 import {AccordionModule} from 'primeng/accordion';
+import { SpyDirective } from './spy.directive';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
     LifecycleComponent,
     SequenceComponent,
-    ChildComponent
+    ChildComponent,
+    SpyDirective
   ],
   imports: [
     CommonModule,
     LifecycleRoutingModule,
-    AccordionModule
+    AccordionModule,
+    ButtonModule
   ]
 })
 export class LifecycleModule { }

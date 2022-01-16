@@ -18,32 +18,38 @@ export class SequenceComponent implements OnChanges, OnInit, DoCheck,
   AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked,
   OnDestroy  {
-  @Input() name = '';
 
-  constructor(logger: LoggerService) { }
+  @Input() name = 'Filip';
+
+  hookLog: string[] = [];
+
+  constructor(private readonly logger: LoggerService) {
+    this.hookLog = this.logger.logs;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.logger.log(`OnChanges`);
+  }
 
   ngOnInit(): void {
   }
 
-  ngAfterContentChecked(): void {
-  }
+  // Beware! Called frequently!
+  // Called in every change detection cycle anywhere on the page
+  ngDoCheck() { this.logger.log(`DoCheck`); }
 
-  ngAfterContentInit(): void {
-  }
+  ngAfterContentInit() { this.logger.log(`AfterContentInit`);  }
 
-  ngAfterViewChecked(): void {
-  }
+  // Beware! Called frequently!
+  // Called in every change detection cycle anywhere on the page
+  ngAfterContentChecked() { this.logger.log(`AfterContentChecked`); }
 
-  ngAfterViewInit(): void {
-  }
+  ngAfterViewInit() { this.logger.log(`AfterViewInit`); }
 
-  ngDoCheck(): void {
-  }
+  // Beware! Called frequently!
+  // Called in every change detection cycle anywhere on the page
+  ngAfterViewChecked() { this.logger.log(`AfterViewChecked`); }
 
-  ngOnChanges(changes: SimpleChanges): void {
-  }
-
-  ngOnDestroy(): void {
-  }
+  ngOnDestroy() { this.logger.log(`OnDestroy`); }
 
 }
