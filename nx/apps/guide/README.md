@@ -14,7 +14,7 @@
 Cesta začíná přímo za /node_modules/
 
 ```css
-@import "/primeflex/primeflex.css";
+@import "./primeflex/primeflex.css";
 ```
 
 
