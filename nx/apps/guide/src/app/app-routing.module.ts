@@ -8,7 +8,8 @@ const routes: Routes = [
   { path: 'async', loadChildren: () => import('../modules/async/async.module').then(m => m.AsyncModule) },
   { path: 'lifecycle', loadChildren: () => import('../modules/lifecycle/lifecycle.module').then(m => m.LifecycleModule) },
   { path: 'flex', loadChildren: () => import('../modules/flex/flex.module').then(m => m.FlexModule) },
-  { path: 'ngxs', loadChildren: () => import('../modules/ngxs/ngxs.module').then(m => m.NgxsModule) }];
+  { path: 'ngxs', loadChildren: () => import('../modules/ngxs/ngxs.module').then(m => m.NgxsModule) },
+  { path: 'communication', loadChildren: () => import('../modules/communication/communication.module').then(m => m.CommunicationModule) }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

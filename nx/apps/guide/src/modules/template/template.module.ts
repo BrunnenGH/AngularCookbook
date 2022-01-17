@@ -5,11 +5,13 @@ import { TemplateRoutingModule } from './template-routing.module';
 import { TemplateComponent } from './template.component';
 import { RorwformComponent } from './rorwform/rorwform.component';
 import {AccordionModule} from 'primeng/accordion';
+import { RoComponent } from './ro/ro.component';
 
 @NgModule({
   declarations: [
     TemplateComponent,
-    RorwformComponent
+    RorwformComponent,
+    RoComponent
   ],
   imports: [
     CommonModule,
