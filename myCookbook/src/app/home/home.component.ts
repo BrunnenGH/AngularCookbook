@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {PanelMenuModule} from 'primeng/panelmenu';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  menuItems: MenuItem[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setupMenu(): void {
+    this.menuItems = [
+      {
+        label: 'Component',
+        items: [
+          {
+            label: 'Component communication'
+          }
+        ]
+      }
+    ];
   }
 
 }
