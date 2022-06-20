@@ -16,6 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+https://thymikee.github.io/jest-preset-angular/docs/  
 Run `ng test` to execute the unit tests.
 
 ## Further help
