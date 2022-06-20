@@ -19,6 +19,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 https://thymikee.github.io/jest-preset-angular/docs/  
 Run `ng test` to execute the unit tests.
 
+## Speactator
+
+https://github.com/vanister/angular-jest-spectator  
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
