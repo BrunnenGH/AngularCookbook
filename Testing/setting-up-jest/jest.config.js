@@ -1,6 +1,4 @@
 const { defaults: jestNgPreset } = require('jest-preset-angular/presets');
-// const { defaultsESM: jestNgPreset } = require('jest-preset-angular/presets')
-
 const { pathsToModuleNameMapper } = require('ts-jest')
 const { compilerOptions } = require('./tsconfig')
 
@@ -15,6 +13,6 @@ module.exports = {
             ...jestNgPreset.globals['ts-jest'],
             // [...your overriden options]
             tsConfig: '<rootDir>/tsconfig.spec.json'
-        },
-    },
+        }
+    }
 };
