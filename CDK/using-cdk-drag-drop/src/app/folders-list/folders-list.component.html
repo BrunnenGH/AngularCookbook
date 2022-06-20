@@ -4,6 +4,7 @@
   </div>
   <div class="folders__list">
     <app-folder
+            cdkDropList
       [ngClass]="{
         'folders__list__folder--selected': folder === selectedFolder
       }"
@@ -15,8 +16,9 @@
     </app-folder>
   </div>
   <div class="folders__selected-folder-files" *ngIf="selectedFolder">
-    <div>
+    <div cdkDropList>
       <app-file
+              cdkDrag
         *ngFor="let file of selectedFolder.files"
         [file]="file"
         class="folders__selected-folder-files__file"

@@ -1,3 +1,4 @@
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -14,7 +15,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FoldersListComponent,
     FileComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
+  imports: [BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    DragDropModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
