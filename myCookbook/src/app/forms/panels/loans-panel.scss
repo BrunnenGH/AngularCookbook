@@ -1,0 +1,109 @@
+@import "../../scss";
+
+.cps-loans-panel {
+  width: 100%;
+  margin-bottom: 15px;
+  flex-direction: column;
+  box-sizing: border-box;
+  display: flex;
+
+  .cps-loans-panel-header {
+    color: #ffffff;
+    background: $panel-header-bg;
+    padding: 6px 10px 7px 5px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+
+    &:hover mat-icon {
+      color: $primary-font-color;
+    }
+  }
+
+  .without-padding, .cps-loans-panel-body .cps-loans-panel .without-padding {
+    & > .cps-loans-panel-body {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .cps-loans-panel-body {
+    color: $primary-font-color;
+    background: $panel-bg;
+    font-size: 11px;
+    padding: 15px 10px;
+    width: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+
+    &.hide {
+      display: none !important;
+    }
+
+    // amounts, dates
+    .value {
+      font-weight: bold;
+    }
+
+    .cps-loans-panel {
+      .cps-loans-panel-header {
+        background-color: #C2DBEB;
+        color: #005292;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      .cps-loans-panel-body {
+        background-color: #C2DBEB;
+        color: #005292;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 14px 30px 15px 30px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.cps-modal__content {
+  .cps-loans-panel {
+    .cps-loans-panel-header {
+      background-color: #68a7d2;
+    }
+
+    .cps-loans-panel-body {
+      background: $panel-bg;
+
+      .cps-loans-panel {
+        .cps-loans-panel-header {
+          background-color: #C2DBEB;
+          color: #005292;
+          font-size: 12px;
+          font-weight: bold;
+        }
+
+        .cps-loans-panel-body {
+          background-color: #C2DBEB;
+          color: #005292;
+          font-size: 11px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.last > cps-loans-panel .cps-loans-panel,
+.last > cps-loans-blank-panel .cps-loans-panel,
+cps-loans-panel.last .cps-loans-panel,
+cps-loans-blank-panel.last .cps-loans-panel,
+.cps-loans-panel-container > cps-loans-panel:last-child > .cps-loans-panel,
+.cps-loans-panel-container > .cps-loans-panel-container-item:last-child > cps-loans-panel > .cps-loans-panel,
+.cps-loans-panel-container > cps-loans-blank-panel:last-child > .cps-loans-panel,
+.cps-loans-panel-container > .cps-loans-panel-container-item:last-child > cps-loans-blank-panel > .cps-loans-panel {
+  margin-bottom: 0 !important;
+}

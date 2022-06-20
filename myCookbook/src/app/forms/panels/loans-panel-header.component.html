@@ -1,0 +1,9 @@
+<div class="cps-loans-panel-header {{ customClass }}" fxLayout="row" fxFlex="100" (click)="toggleOpen()">
+  <div fxFlex="24px" fxLayoutAlign="center center">
+    <mat-icon>{{ opened ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+  </div>
+  <div fxLayoutAlign="start center">
+    {{ label }}
+  </div>
+  <ng-content></ng-content>
+</div>
