@@ -12,7 +12,7 @@ module.exports = {
         'ts-jest': {
             ...jestNgPreset.globals['ts-jest'],
             // [...your overriden options]
-            tsConfig: '<rootDir>/tsconfig.spec.json'
+            tsconfig: '<rootDir>/tsconfig.spec.json'
         }
     }
 };
