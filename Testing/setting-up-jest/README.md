@@ -16,6 +16,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
+POZOR - Angular 12. Pro tuto verzi došlo v jest-preset-angular ke změnám!!!
+
 https://thymikee.github.io/jest-preset-angular/docs/  
 Run `ng test` to execute the unit tests.
 
